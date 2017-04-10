@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Bootstrap Store</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/hzw-city-picker.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+ <body>
+  <!-- Navigation -->
+  <nav class="navbar-inverse" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">CEST</a>
+      </div>
+       <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <form class="navbar-form navbar-left">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">查找</button>
+        </form>        
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#"  class="active dropdown-toggle" data-toggle="dropdown">商品分类 <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="category.html">手机通讯</a></li>
+              <li><a href="category.html">腕表配饰</a></li>
+              <li><a href="category.html">电脑办公</a></li>
+              <li><a href="category.html">平板数码</a></li>
+              <li><a href="category.html">相机单反</a></li>
+              <li><a href="category.html">运动户外</a></li>
+              <li class="divider"></li>
+              <li><a href="category.html">所有商品</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="shopping-car-hd">
+              <a href="#"><span class="badge pull-right">4</span><i class="glyphicon glyphicon-shopping-cart"></i></a>
+              <div class="shopping-car-bd">
+                <div class="shopping-car-title">
+                  <strong>最近加入宝贝:</strong>
+                </div>
+                <ul class="shopping-car-lists">
+                  <li>
+                    <div class="car-img">
+                      <a href=""><img src="https://img.alicdn.com/bao/uploaded/i4/2083262904/TB2WwM.lpXXXXbdXXXXXXXXXXXX_!!2083262904.jpg_40x40.jpg" alt="袜子男士短袜船袜男袜子夏季低帮薄款运动棉袜短筒防臭隐形袜浅口"></a>
+                    </div>
+                    <div class="car-count">
+                      "￥"<strong class="car-price">16.99</strong>
+                    </div>
+                    <div class="car-title">
+                      <a href="" title="袜子男士短袜船袜男袜子夏季低帮薄款运动棉袜短筒防臭隐形袜浅口">
+                        袜子男士短袜船袜男袜子夏季低帮薄款运动棉袜短筒防臭隐形袜浅口
+                      </a>
+                    </div>
+                    <div class="car-del">
+                      <a href="#">删除</a>
+                    </div>
+                    <div class="car-info">
+                      <span>颜色分类：801爆款船袜</span>
+                      <span>尺码:【5双礼盒装】均码【舒适百搭】</span>
+                    </div>
+                  </li>
+                </ul>
+                <div class="shopping-ft">
+                  <p><strong>购物车还有六件宝贝</strong></p>
+                </div>
+                <button type="button" class="btn btn-primary rf">
+                  <a href="#">查看我的购物车</a>
+                </button>
+              </div>
+          </li>
+          <li><a href="account.html" title="个人信息"><i class="glyphicon glyphicon-user"></i></a></li>
+          <li><a href="#" >联系客服</a></li>
+          <li><a href="#" >加入我们</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#signModal">登录</a><a href="#"  style="display:none">退出</a></li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+    </div> <!-- /.container-fluid -->
+  </nav>
+
+
+   <!-- Modal -->
+  <div class="modal fade" id="signModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h2 class="modal-title" id="myModalLabel">登录</h2>
+        </div>
+        <div class="modal-body">
+          <form class="form-signin" role="form">
+            <h3 class="form-signin-heading">邮箱/账号</h3>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="账号" required autofocus>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="密码" required>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="remember-me"> 记住我
+              </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+            <button class="btn btn-lg btn-primary btn-block " type="submit">注册</button>
+            
+          </form>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-3">
+            <a href="#" class="btn btn-facebook btn-large btn-caps btn-block">微博 <span class="icon-facebook"></span></a>
+          </div>
+          <div class="col-xs-3">
+            <a href="" class="btn btn-twitter btn-large btn-caps btn-block">QQ <span class="icon-twitter"></span></a>
+          </div>
+          <div class="col-xs-3">
+            <a href="" class="btn btn-lg btn-caps btn-block"> <span class="icon-dribbble"></span></a>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>  
+ 
+  <!-- Page Content -->
+  <div id="content" class="container">
+   <div class="row">
+     <div class="col-md-3">
+        <h3 class="">管理订单</h3>
+        <div class="list-group">
+          <a href="account.html" class="list-group-item">待付款</a>
+          <a href="account.html" class="list-group-item">全部订单</a>
+<!--           <a href="account.html" class="list-group-item">我的收货地址</a> -->
+        </div>
+        <h3>收货地址</h3>
+        <div class="panel panel-default" id="formPanel">
+          <div class="panel-heading"><span>广东 </span> <span>深圳</span> （<span>周先生</span>）收</div>
+          <div class="panel-body">
+             <span>南山区深圳大学 蓬莱公寓</span> <span>13590251691</span>
+             <p><a href="#" data-toggle="modal" data-target="#myModal">修改</a></p>
+          </div>
+
+        </div>
+      </div>
+	 <div class="col-md-9">
+
+        <h3>订单状态</h3>
+
+
+       <div class="thumbnail">
+          <div class="row">
+            <div class="col-sm-1">
+              <img class="img-responsive" src="http://placehold.it/750x600" alt="" />
+            </div>
+            <div class="col-sm-4">
+              <a href="product.html">产品名字</a>
+            </div>
+            <div class="col-sm-1">
+              1
+            </div>
+            <div class="col-sm-2">
+              $49.99
+            </div>
+            <div class="col-sm-2">
+              <button class="btn btn-sm btn-default">待付款</button>
+            </div>
+            <div class="col-sm-2">
+              <input type="checkbox" >选择支付
+            </div>
+          </div>
+       </div>
+	   
+	   <div class="thumbnail">
+          <div class="row">
+            <div class="col-sm-1">
+              <img class="img-responsive" src="http://placehold.it/750x600" alt="" />
+            </div>
+            <div class="col-sm-4">
+              <a href="product.html">产品名字</a>
+            </div>
+            <div class="col-sm-1">
+              1
+            </div>
+            <div class="col-sm-2">
+              $19.99
+            </div>
+            <div class="col-sm-2">
+              <button class="btn btn-sm btn-success">已完成</button>
+            </div>
+            <div class="col-sm-2">
+               已支付
+            </div>
+          </div>
+        </div>
+		
+		<div class="thumbnail">
+          <div class="row">
+            <div class="col-sm-1">
+              <img class="img-responsive" src="http://placehold.it/750x600" alt="" />
+            </div>
+            <div class="col-sm-4">
+              <a href="product.html">产品名字</a>
+            </div>
+            <div class="col-sm-1">
+              1
+            </div>
+            <div class="col-sm-2">
+              $39.99
+            </div>
+            <div class="col-sm-2">
+              <button class="btn btn-sm btn-success">已完成</button>
+            </div>
+            <div class="col-sm-2">
+              已支付
+            </div>
+          </div>
+        </div>
+		
+		<div class="thumbnail">
+          <div class="row">
+            <div class="col-sm-1">
+              <img class="img-responsive" src="http://placehold.it/750x600" alt="" />
+            </div>
+            <div class="col-sm-4">
+              <a href="product.html">产品名字</a>
+            </div>
+            <div class="col-sm-1">
+              1
+            </div>
+            <div class="col-sm-2">
+              $49.99
+            </div>
+            <div class="col-sm-2">
+              <button class="btn btn-sm btn-default">待付款</button>
+            </div>
+            <div class="col-sm-2">
+              <input type="checkbox" >选择支付
+            </div>
+          </div>
+       </div>
+	   
+	   <div class="thumbnail">
+          <div class="row">
+            <div class="col-sm-1">
+              <img class="img-responsive" src="http://placehold.it/750x600" alt="" />
+            </div>
+            <div class="col-sm-4">
+              <a href="product.html">产品名字</a>
+            </div>
+            <div class="col-sm-1">
+              1
+            </div>
+            <div class="col-sm-2">
+              $19.99
+            </div>
+            <div class="col-sm-2">
+              <button class="btn btn-sm btn-success">已完成</button>
+            </div>
+            <div class="col-sm-2">
+              已完成
+            </div>
+          </div>
+        </div>
+		
+		<div class="thumbnail">
+          <div class="row">
+            <div class="col-sm-1">
+              <img class="img-responsive" src="http://placehold.it/750x600" alt="" />
+            </div>
+            <div class="col-sm-4">
+              <a href="product.html">产品名字</a>
+            </div>
+            <div class="col-sm-1">
+              1
+            </div>
+            <div class="col-sm-2">
+              $49.99
+            </div>
+            <div class="col-sm-2">
+              <button class="btn btn-sm btn-default">待付款</button>
+            </div>
+            <div class="col-sm-2">
+              <input type="checkbox" >选择支付
+            </div>
+          </div>
+       </div>
+
+	   <!-- <div class="col-sm-12 center">
+          <ul class="pagination">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul>
+        </div> -->
+	 </div>
+
+   <!-- address model -->
+
+   <!-- shopping car -->
+   <nav class="navbar navbar-inverse navbar-fixed-bottom container  Checkout-bar">
+      <div class="cart-checkbox">
+        <p><input type="checkbox">全选</p>
+      </div>
+      <div class="amout">
+        <div class="amout-num">
+          <p>已选商品<span>0</span>件</p>
+        </div>
+        <div class="amout-sum">
+          <p>合计:<span>0.00</span></p>
+        </div>
+        <button class="btn btn-default">
+          结算
+        </button>
+      </div>
+        
+   </nav>
+   </div>	  
+  </div>  <!-- div element with the content as id and a .container class -->
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h2 class="modal-title" id="myModalLabel">收货地址</h2>
+        </div>
+        <div class="modal-body">
+          <form class="form-address" id="form-address" role="form">
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">地址</span>
+              <a id="proTooltip"tabindex="0" class="btn tooltip" role="button" data-toggle="popover" data-placement="top" data-trigger="focus" title="省市选择有误" data-content="请选择省/市"></a>
+              <input type="text" id="cityChoice" name="provinceCity"class="form-control" placeholder="省/市" aria-describedby="basic-addon1" tabindex="1"> 
+            </div>
+            <br/>
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">详细地址</span>
+              <a id="areaTooltip"tabindex="0" class="btn tooltip" role="button" data-toggle="popover" data-placement="top" data-trigger="focus" title="地区填写有误"  data-content="输入不能为空"></a>
+              <input type="text" class="form-control" name="area"placeholder="南山区深圳大学蓬莱公寓" aria-describedby="basic-addon1" tabindex="2">
+            </div>
+            <br/>
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">姓名</span>
+              <a id="nameTooltip"tabindex="0" class="btn tooltip" role="button" data-toggle="popover" data-placement="top" data-trigger="focus" title="姓名填写有误"  data-content="输入不能为空"></a>
+              <input type="text" class="form-control" id="name" name="name"  placeholder="周裕涛" aria-describedby="basic-addon1" tabindex="3">
+            </div>
+            <br/>
+            <div class="input-group">
+              <span class="input-group-addon"  id="basic-addon1" >手机号码</span>
+              <a id="phoneTooltip"tabindex="0" class="btn tooltip" role="button" data-toggle="popover" data-placement="top" data-trigger="focus" title="手机号码填写有误"  data-content="输入不能为空"></a>
+              <input type="text" class="form-control"  id="phoneNumber" name="phoneNumber" placeholder="135*******" aria-describedby="basic-addon1" tabindex="4">
+            </div>
+            <div class="btn btn-lg btn-primary btn-block" onclick="changeAddress()" tabindex="5">确定</div>
+            
+          </form>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-3">
+            <a href="#" class="btn btn-facebook btn-large btn-caps btn-block">微博 <span class="icon-facebook"></span></a>
+          </div>
+          <div class="col-xs-3">
+            <a href="" class="btn btn-twitter btn-large btn-caps btn-block">QQ <span class="icon-twitter"></span></a>
+          </div>
+          <div class="col-xs-3">
+            <a href="" class="btn btn-lg btn-caps btn-block"> <span class="icon-dribbble"></span></a>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+   <div class="container">
+   <hr>
+    <!-- Footer -->
+    <footer>
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright &copy; <a href="ecommerce.html">Packt Publishing</a> 2014</p>
+        </div>
+      </div>
+    </footer>
+	  </div>  <!-- div element ending with container class for footer -->
+
+  <!-- jQuery Version 1.11.0 -->
+  <script src="js/jquery-1.11.1.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.js"></script>
+
+  <!-- address modal 表单省市选择插件-->
+  <script type="text/javascript" src="js/city-data.js"></script>
+  <script type="text/javascript" src="js/hzw-city-picker.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      var cityPicker = new HzwCityPicker({
+          data: data,
+          target: 'cityChoice',
+          valType: 'k-v',
+          hideCityInput: {
+              name: 'city',
+              id: 'city'
+          },
+          hideProvinceInput: {
+              name: 'province',
+              id: 'province'
+          }
+      });
+
+      cityPicker.init();
+
+      $('[data-toggle="popover"]').popover();
+    });  
+  // 检查地址改变
+  function changeAddress(){
+    var model=document.getElementById('myModal');
+    var btn=model.getElementsByClassName('close');
+    var form=document.getElementById('form-address');
+    var formLists={
+      province:form.province.value,
+      city:form.city.value,
+      area:form.area.value,
+      name:form.name.value,
+      phoneNumber:form.phoneNumber.value
+    }
+    var formPanel=document.getElementById('formPanel');
+    var spanLists=formPanel.getElementsByTagName('span');
+    if(checkForm(form)){
+        $.ajax({
+        type:'POST',
+        url:"http://localhost:3000/user",
+        data:formLists,
+        dataType:'json'
+        
+        }).done(function(results){
+        if(results.success==1){//修改成功则更改页面收货地址信息
+          spanLists[0].innerHTML=(formLists["province"].match(/[\u4e00-\u9fa5]+/))[0];
+          spanLists[1].innerHTML=(formLists["city"].match(/[\u4e00-\u9fa5]+/))[0];
+          spanLists[2].innerHTML=formLists["area"];
+          spanLists[3].innerHTML=formLists["name"];
+          spanLists[4].innerHTML=formLists["phoneNumber"];
+          $('#myModal').modal('hide')
+        }
+        else{
+          alert("地址输入有误,请重新输入");
+        }
+      })   
+    }
+  } 
+  //检查表单内容不为空
+  function checkForm(form){
+    //检查之前先关闭上一次检查结果的提示
+      $('#proTooltip').popover('hide');
+      $('#areaTooltip').popover('hide');
+      $('#nameTooltip').popover('hide');
+      $('#phoneTooltip').popover('hide');
+      //分类进行检查
+    if(form.province.value==''){
+      $('#proTooltip').popover('toggle');
+      form.provinceCity.focus();
+      return false;
+    }
+    if(form.area.value==''){
+      $('#areaTooltip').popover('toggle');
+      form.area.focus();
+      return false;
+    }
+    if(form.name.value==''){nameTooltip
+      $('#nameTooltip').popover('toggle');
+      form.name.focus();
+      return false;
+    }
+    if(form.phoneNumber.value==''){
+      $('#phoneTooltip').popover('toggle');
+      form.phoneNumber.focus();
+      return false;
+    }
+    return true;
+  } 
+
+  </script>
+ </body>
+</html>

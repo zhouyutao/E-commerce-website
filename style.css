@@ -1,0 +1,183 @@
+/*navbar*/
+.navbar-brand{
+  font-size: 29px;
+}
+.center {
+  text-align: center;
+}
+.dropdown-menu{
+  font-family: '微软雅黑';
+}
+/*shopping-car*/
+
+.shopping-car-bd{
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  z-index: 1000;
+  display: none;
+  float: left;
+  width: 296px;
+  padding: 5px 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: #222222;
+  color:#777777;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background-clip: padding-box;
+}
+.shopping-car-bd a{
+  text-decoration: none;
+  color:#777777;
+
+}
+.shopping-car-bd a:hover{
+  color:#ffffff;
+}
+.shopping-car-lists{
+  padding:0;
+  margin:10px 0;
+}
+.shopping-car-lists .car-img{
+  float:left;
+  padding-right: 5px;
+}
+.shopping-car-lists .car-count{
+  float:right;
+}
+.shopping-car-lists .car-title{
+  height:21px;
+}
+.shopping-car-lists .car-title a{
+  display:inline-block;
+  width: 162px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.shopping-car-lists .car-del{
+  float:right;
+  padding-left:5px;
+}
+.shopping-car-lists .car-info{
+  height:21px;
+  overflow:hidden;
+}
+.shopping-car-bd .shopping-ft{
+  text-align: right;
+}
+.shopping-car-bd button{
+  float:right;
+}
+.shopping-car-bd button a{
+  color:#ffffff;
+}
+.shopping-car-hd:hover .shopping-car-bd{
+  display:block;
+}
+
+
+
+#content {
+  margin-top: 20px;
+}
+#content h3 {
+  margin-top: 0;
+}
+.list-group{
+  font-size: 16px
+}
+.add-to-cart {
+  text-align: center;
+  font-size: 32px;
+  padding: 0;
+  margin: 0;
+  height: 8px;
+  position: relative;
+}
+.add-to-cart a {
+  background: #fff;
+  top: -18px;
+  border-radius: 16px;
+}
+.add-to-cart a:hover {
+  text-decoration: none;
+}
+
+.thumbnails {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.caption p{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.caption>h4{
+  text-decoration: line-through;
+}
+.caption>h2{
+  margin:0;
+}
+.number {
+  clear: both;
+  min-height: 30px;
+}
+.number label {
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.number input {
+  display: inline-block;
+  width: 20%;
+}
+.more-area{
+  text-align: right;
+}
+footer {
+  text-align: center;
+}
+
+
+/*结算栏*/
+.Checkout-bar{
+  color:#777777;
+  font-size: 16px;
+}
+.Checkout-bar p{
+  padding:14px 15px;
+  margin:0;
+}
+.cart-checkbox, .amout-num,.amout-sum{
+  float:left;
+}
+
+.Checkout-bar .amout{
+  float:right;
+}
+.Checkout-bar .btn{
+  padding:13px 12px;
+}
+
+
+
+/*address model*/
+.input-group{
+  width:100%;
+}
+.input-group-addon{
+  display:block;
+
+  width:100px;
+}
+
+.tooltip{
+  padding:0;
+  margin:1px;
+}
